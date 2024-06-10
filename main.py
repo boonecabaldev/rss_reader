@@ -4,14 +4,18 @@ import feedparser
 import os
 from xml.etree import ElementTree as ET
 
+
 def download_opml(opml_path):
     """Reads the OPML file and returns its content."""
     try:
         with open(opml_path, "r", encoding="utf-8") as f:
             return f.read()
     except FileNotFoundError:
-        print(f"Error: OPML file not found at '{opml_path}'. Please check the path.")
+        print(
+            f"Error: OPML file not found at '{opml_path}'. Please check the path."
+        )
         return None  # Return None to indicate failure
+
 
 def extract_rss_feeds(opml_content):
     """Extracts RSS feed URLs from the OPML content."""
@@ -23,6 +27,7 @@ def extract_rss_feeds(opml_content):
     for outline in soup.find_all('outline', type='rss'):
         feeds.append(outline['xmlUrl'])
     return feeds
+
 
 def save_feed_content(feed_url, output_dir):
     """Fetches and saves the feed content as a formatted XML file."""
@@ -48,24 +53,26 @@ def save_feed_content(feed_url, output_dir):
         file.write(pretty_xml)
         print(f"Saved RSS file: {output_dir}/{feed_title}.xml")
 
+
 def replace_gt_lt(text):
-  """Replaces '&gt;' and '&lt;' with '>' and '<' respectively in a given text."""
-    
-  text = text.replace("&gt;", ">")
-  text = text.replace("&lt;", "<")
-  text = text.replace("&amp;", "&")
-  return text
+    """Replaces '&gt;' and '&lt;' with '>' and '<' respectively in a given text."""
+
+    text = text.replace("&gt;", ">")
+    text = text.replace("&lt;", "<")
+    text = text.replace("&amp;", "&")
+    return text
+
 
 def bytes_to_string_replace_and_back(byte_data):
 
-  string_data = byte_data.decode("utf-8")  # Convert bytes to string
-  string_data = replace_gt_lt(string_data) 
-  return string_data
+    string_data = byte_data.decode("utf-8")  # Convert bytes to string
+    string_data = replace_gt_lt(string_data)
+    return string_data
 
-    
+
 if __name__ == "__main__":
     opml_path = "rss/feedly_rss.opml"
-    output_dir = "feed_outputs"  
+    output_dir = "feed_outputs"
 
     os.makedirs(output_dir, exist_ok=True)
 
