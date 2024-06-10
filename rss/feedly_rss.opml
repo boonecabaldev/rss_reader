@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<opml version="1.0">
+    <head>
+        <title>Boone subscriptions in feedly Cloud</title>
+    </head>
+    <body>
+        <outline text="Crime" title="Crime">
+            <outline type="rss" text="CrimProf Blog" title="CrimProf Blog" xmlUrl="http://lawprofessors.typepad.com/crimprof_blog/atom.xml" htmlUrl="https://lawprofessors.typepad.com/crimprof_blog/"/>
+            <outline type="rss" text="Borderland Beat" title="Borderland Beat" xmlUrl="http://www.borderlandbeat.com/feeds/posts/default" htmlUrl="https://www.borderlandbeat.com/"/>
+            <outline type="rss" text="The Crime Report" title="The Crime Report" xmlUrl="http://www.thecrimereport.org/feed" htmlUrl="https://thecrimereport.org/"/>
+            <outline type="rss" text="Morbidology - A True Crime Podcast" title="Morbidology - A True Crime Podcast" xmlUrl="https://morbidology.com/feed/" htmlUrl="https://morbidology.com"/>
+            <outline type="rss" text="True Crime News" title="True Crime News" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC69uYUqvx-vw4luuX7aHNLQ" htmlUrl="https://www.youtube.com/channel/UC69uYUqvx-vw4luuX7aHNLQ"/>
+            <outline type="rss" text="Kidnapping, Murder, and Mayhem" title="Kidnapping, Murder, and Mayhem" xmlUrl="http://kidnappingmurderandmayhem.blogspot.com/feeds/posts/default" htmlUrl="http://kidnappingmurderandmayhem.blogspot.com/"/>
+            <outline type="rss" text="Crime from Newser" title="Crime from Newser" xmlUrl="http://rss.newser.com/rss/section/13.rss" htmlUrl="https://www.newser.com/"/>
+            <outline type="rss" text="Investigation Discovery" title="Investigation Discovery" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC08wrceRCWhajGG4udhETww" htmlUrl="https://www.youtube.com/channel/UC08wrceRCWhajGG4udhETww"/>
+            <outline type="rss" text="Crime | The Guardian" title="Crime | The Guardian" xmlUrl="http://www.guardian.co.uk/uk/ukcrime/rss" htmlUrl="https://www.theguardian.com/uk/ukcrime"/>
+            <outline type="rss" text="Full Feed | truecrimenews.com" title="Full Feed | truecrimenews.com" xmlUrl="https://feeds.crimewatchdaily.com/rss" htmlUrl="https://truecrimenews.com/"/>
+            <outline type="rss" text="murdermap" title="murdermap" xmlUrl="http://www.murdermap.co.uk/pages/news/news_rss.asp" htmlUrl="https://www.murdermap.co.uk/"/>
+            <outline type="rss" text="Whereabouts Still Unknown" title="Whereabouts Still Unknown" xmlUrl="http://whereaboutsstillunknown.wordpress.com/feed/" htmlUrl="https://whereaboutsstillunknown.wordpress.com"/>
+            <outline type="rss" text="The Smoking Gun RSS" title="The Smoking Gun RSS" xmlUrl="http://www.thesmokinggun.com/rss" htmlUrl="http://thesmokinggun.com/documents/tsgrssfeed.xml"/>
+            <outline type="rss" text="True Crime Magazine" title="True Crime Magazine" xmlUrl="http://www.thecrimemag.com/feed/" htmlUrl="https://thecrimemag.com/"/>
+            <outline type="rss" text="Bonnie's Blog of Crime" title="Bonnie's Blog of Crime" xmlUrl="http://mylifeofcrime.wordpress.com/feed/" htmlUrl="https://mylifeofcrime.wordpress.com"/>
+            <outline type="rss" text="Online Criminal Justice News" title="Online Criminal Justice News" xmlUrl="http://criminal-justice-online.blogspot.com/feeds/posts/default" htmlUrl="http://criminal-justice-online.blogspot.com/"/>
+            <outline type="rss" text="Defrosting Cold Cases" title="Defrosting Cold Cases" xmlUrl="http://www.defrostingcoldcases.com/feed" htmlUrl="https://defrostingcoldcases.com/"/>
+            <outline type="rss" text="crime | New York Post" title="crime | New York Post" xmlUrl="http://nypost.com/tag/crime/feed/" htmlUrl="https://nypost.com"/>
+            <outline type="rss" text="Recent stories from The Homicide Report" title="Recent stories from The Homicide Report" xmlUrl="http://projects.latimes.com/homicide/feeds/posts/" htmlUrl="http://homicide.latimes.com"/>
+            <outline type="rss" text="Crime" title="Crime" xmlUrl="http://www.huffingtonpost.com/feeds/verticals/crime/index.xml" htmlUrl="https://www.huffpost.com/news/crime"/>
+            <outline type="rss" text="True Crime All The Time" title="True Crime All The Time" xmlUrl="https://rss.art19.com/true-crime-all-the-time" htmlUrl="http://www.truecrimeallthetime.com"/>
+        </outline>
+        <outline text="Good" title="Good">
+            <outline type="rss" text="r/TrueCrime" title="r/TrueCrime" xmlUrl="https://api.reddit.com/subreddit/TrueCrime" htmlUrl="https://www.reddit.com/r/TrueCrime/new"/>
+            <outline type="rss" text="r/crime" title="r/crime" xmlUrl="https://api.reddit.com/subreddit/crime" htmlUrl="https://www.reddit.com/r/crime/new"/>
+            <outline type="rss" text="True Murder: The Most Shocking Killers" title="True Murder: The Most Shocking Killers" xmlUrl="http://www.blogtalkradio.com/dan-zupansky1.rss" htmlUrl="https://www.spreaker.com/show/truemurder"/>
+            <outline type="rss" text="Deranged LA Crimes ®" title="Deranged LA Crimes ®" xmlUrl="http://derangedlacrimes.com/?feed=rss2" htmlUrl="https://derangedlacrimes.com/"/>
+            <outline type="rss" text="Murder is Everywhere" title="Murder is Everywhere" xmlUrl="http://murderiseverywhere.blogspot.com/feeds/posts/default" htmlUrl="http://murderiseverywhere.blogspot.com/"/>
+            <outline type="rss" text="InSight Crime" title="InSight Crime" xmlUrl="https://www.insightcrime.org/feed/" htmlUrl="https://insightcrime.org/"/>
+        </outline>
+        <outline text="Creepy" title="Creepy">
+            <outline type="rss" text="That Creepy Reading" title="That Creepy Reading" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC9li9QbQlmExYM6UxnvhuCQ" htmlUrl="https://www.youtube.com/channel/UC9li9QbQlmExYM6UxnvhuCQ"/>
+            <outline type="rss" text="r/creepy" title="r/creepy" xmlUrl="https://api.reddit.com/subreddit/creepy" htmlUrl="https://www.reddit.com/r/creepy/new"/>
+            <outline type="rss" text="r/nosleep" title="r/nosleep" xmlUrl="https://api.reddit.com/subreddit/nosleep" htmlUrl="https://www.reddit.com/r/nosleep/new"/>
+            <outline type="rss" text="r/LetsNotMeet" title="r/LetsNotMeet" xmlUrl="https://api.reddit.com/subreddit/LetsNotMeet" htmlUrl="https://www.reddit.com/r/LetsNotMeet/new"/>
+        </outline>
+    </body>
+</opml>

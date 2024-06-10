@@ -1,0 +1,101 @@
+import xml.etree.ElementTree as ET
+import feedparser
+import requests
+
+
+def download_rss_feed(rss_url):
+  """Downloads an RSS feed given its URL.
+
+  Args:
+    rss_url: The URL of the RSS feed.
+
+  Returns:
+    A feedparser.FeedParserDict object containing the parsed RSS feed.
+  """
+  feed = feedparser.parse(rss_url)
+  return feed
+
+
+def get_rss_feeds(opml_file):
+  tree = ET.parse(opml_file)
+  root = tree.getroot()
+
+  rss_feeds = []
+  for outline in root.iter('outline'):
+    if outline.attrib.get('type') == 'rss':
+      rss_feeds.append(outline.attrib['xmlUrl'])
+
+  return rss_feeds
+
+def rss_feeds(opml_filename):
+  opml_file = opml_filename
+  rss_feed_urls = get_rss_feeds(opml_file)
+  print(rss_feed_urls)
+
+  for feed_url in rss_feed_urls:
+    # Example usage:
+    original_url = feed_url
+    final_url = handle_redirects(original_url)
+    print(f"Final URL: {final_url}")
+    
+    feed = download_rss_feed(feed_url)
+    
+    yield feed
+
+
+def show_rss_feed(feed):
+  # Access feed data
+  print(f"Feed title: {feed.feed.title}")
+  print(f"Feed description: {feed.feed.description}")
+
+  for entry in feed.entries:
+    print(f"Entry title: {entry.title}")
+    print(f"Entry link: {entry.link}")
+    print(f"Entry summary: {entry.summary}")
+    print("-" * 20)
+
+def pretty_print_xml(xml_string):
+  """Prints XML in a readable format with indentation."""
+  root = ET.fromstring(xml_string)
+  ET.indent(root, space="  ", level=0)
+  print(ET.tostring(root, encoding='unicode'))
+
+def handle_redirects(url):
+  """
+  This function handles both 301 (Moved Permanently) and 302 (Found) redirects
+  and returns the final URL.
+  Args:
+    url: The initial URL to check.
+  Returns:
+    The final URL after following all redirects.
+  """
+  response = requests.get(url, allow_redirects=False)
+  if response.status_code in (301, 302):
+    new_url = response.headers['Location']
+    print(f"Redirected from {url} to {new_url}")
+    return handle_redirects(new_url)  # Recursively follow redirects
+  else:
+    return url  # No redirect, return the original URL
+
+
+
+####################################################
+# ENTRY-POINT
+####################################################
+def main():
+  try:
+    opml_file = "rss/feedly_rss.opml"
+    
+    for feed in rss_feeds(opml_file):
+      xml_string = feed.feed.get('xml_string')  # Get the XML string
+      if xml_string:  # Check if the XML string exists
+        pretty_print_xml(xml_string)
+      else:
+        print("\nXML string not found in the feed.\n") 
+        pretty_print_xml(xml_string)
+    
+      break
+  except Exception as e:
+    print(f"An unexpected orror occurred: {e}")
+
+main()
